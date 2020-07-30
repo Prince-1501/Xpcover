@@ -1,0 +1,161 @@
+
+--------------------------------*******---------------------------------
+
+1) Policy Details
+
+Policy Number                     String
+Receipt Number                    String
+Date Issued                       Date
+Policy Producer Code              String
+Policy Commencement Date          Date
+Policy Commencement Time          String
+Product Name                      String
+Plan Name                         String
+Cover Type                        String
+Sum Insured                       String
+Renewal Due Date                  String
+Account code of service           String
+Period of Insurance{
+    From                          Date
+    To                            Date
+}
+Policy Period                     String
+Client Type                       String
+
+
+Intermediary Details {
+      Intermediary Code           String
+      Intermediary Name           String
+      Contact                     [Number]
+      Intermediary Address        String
+      Intermediary Fax            String
+}
+
+
+
+--------------------------------*******---------------------------------
+
+2) Issuing Office Details
+
+Office Code                   String
+Telephone                     [Number]
+Email                         [String]
+Fax                           String
+GSTIN                         String
+TAX Registration Number       String
+SAC                           String
+Address {
+    Address Line1             String
+    Country                   String
+    state                     String
+    city                      String
+    pin code                  Number
+}
+
+
+
+
+--------------------------------*******---------------------------------
+
+3)  Policy holder Details
+
+Name of Policy holder         String
+Policy holder Date of Birth   Date
+Country                       String
+Occupation                    String
+Mobile Number                 Number
+Email                         String
+gender                        String
+PAN Number                    String
+Customer ID                   String
+Customer GSTIN Number         String
+Address {
+    Address Line1             String
+    Country                   String
+    state                     String
+    city                      String
+    pin code                  Number
+}
+
+
+
+
+
+
+
+--------------------------------*******---------------------------------
+
+4)  Nominee Details
+
+Nominee Name                  String
+Nominee Address{
+    Address Line1             String
+    Country                   String
+    state                     String
+    city                      String
+    pin code                  Number
+}
+Relationship                  String
+
+
+--------------------------------*******---------------------------------
+5)  Premium and GST details
+
+Total Gross Premium           Number
+SGST{
+    Rate of Tax               Number
+    Amount                    Number
+}
+CGST{
+    Rate of Tax               Number
+    Amount                    Number
+}
+IGST{
+    Rate of Tax               Number
+    Amount                    Number
+}
+Net Premium Amount            Number
+
+
+
+
+
+--------------------------------*******---------------------------------
+
+                      ---------- *** Travel insurance *** -----------
+
+Name                                            String
+Relationship with Applicant                     String
+Date of Birth                                   Date
+Passport Number                                 String
+Any preExisting Disease                         String
+Nominee Name                                    String
+Relationship with Nominee                       String
+
+
+
+                      ---------- *** Health insurance *** -----------
+Name of Insured Person                          String
+Date of Birth                                   Date
+gender                                          String
+Occupation                                      String
+Relationship with Policyholder                  String
+Date of inception of Continuous Coverage        Date
+Any Pre-Existing Disease                        String
+
+
+
+                  ---------- *** Private Car insurance *** -----------
+Registration Number                              String
+Type of Body                                     String
+Engine Number                                    String
+Chassis Number                                   String
+Cubic Capacity                                   Number
+Year of Manufacture                              Number
+Make of the Vehicle                              String
+Seating Capacity (including Driver)              Number
+Model Description                                String
+Total Premium (in Rs.)                           Number
+
+
+--------------------------------*******---------------------------------

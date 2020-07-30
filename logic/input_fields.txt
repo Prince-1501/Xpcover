@@ -1,0 +1,101 @@
+--------------------------------*******---------------------------------
+Field                                         Type             Some Examples
+
+         ------------*** Data Fields from Edelweiss ****----------
+
+POLICY DETAILS{
+    Proposal Type                              String          // Individual
+    Number of Members to be insured            Number          // 1
+    Plan type                                  String          // Silver
+    Floater type                               String          // 1A
+    Sum insured                                String          // 5L
+    DoB (DD/MM/YYYY)                           Date            // 18/5/1954
+    Policy term (years)                        Number          // 1
+    Voluntary co-pay option                    Number          // 0%
+    Employee discount                          Boolean         // No
+}
+
+
+ADD-ONS {
+    Critical illness                                           // No
+    Restoration                                                // No
+    Recharge                                                   // No
+    Health 241                                                 // No
+}
+
+PREMIUM RATE{
+    Total Premium (before discount)            Number          // 20,549
+    Total Premium (before GST)                 Number          // 20,549
+}
+
+
+
+
+
+
+--------------------------------*******---------------------------------
+
+        ------------*** Data from ICICI LOMBARD ****----------
+
+
+------------*** Travel Insurance ****----------
+
+Link : https://www.icicilombard.com/travel-insurance?source=prodcategory&opt=travel
+
+-------------------------
+Select travel scope by geography             [String]         //   USA or Canada |Asia |Schengen |Rest of the World
+//  [NOTE] Or if you aren’t sure which geography to select, tell us the countries you’re visiting.
+
+Select travel scope by country               [String]         // America, London
+Trip Start Date                              Date
+Trip End Date                                Date
+
+-------------------------
+How many people are travelling?{
+    3 months - 50 Years                      Number
+    51 - 60 Years                            Number
+    61 - 70 Years                            Number
+    71 - 85 Years                            Number
+}
+
+Mobile Number                                Number
+Email                                        String
+
+// [NOTE] *All the travelling members are Indian residents and will be travelling from India
+[CHECKBOX] All the travellers have a non-immigrant visa
+[CHECKBOX] I agree to the Terms and Conditions
+[CHECKBOX] I want to get my quote and policy detail on WhatsApp
+-------------------------
+Applicant Details{
+    Title                                    String          // Mr.
+    Applicant Name                           String          // Prince
+    Mobile Number                            Number          // Automatically fetch from previous section
+    Email                                    String          // Automatically fetch from previous section
+    Date of Birth                            Date
+    Address Line 1                           String
+    Pin code                                 Number
+    city and State                           String          // Automatically fetch from Pin code
+}
+
+Emergency contact details {
+    Emergency contact person name            String
+    Emergency contact Mobile Number          Number
+}
+
+[CHECKBOX] I am travelling
+[CHECKBOX] Above Address is my home Address
+[CHECKBOX] Send me the policy on Email
+[CHECKBOX] I want to update GSTIN/UIN Number
+
+-------------------------
+Traveller Details {
+    insured Name                                   String
+    Relationship with Applicant                    String          // Self | mother | etc ..
+    Date of Birth                                  Date
+    Passport Number                                String
+    Any pre-Existing Disease (Now or in the past)  String
+    Name of Nominee                                String
+    Relationship with Nominee                      String          // Self | mother | etc ..
+
+}
+--------------------------------*******---------------------------------

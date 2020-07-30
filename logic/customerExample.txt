@@ -1,0 +1,173 @@
+transactionId: "ACRAF23DB3C4",
+quotation:{
+    0:{
+      quotationId: "UTB5465QAD",
+      quotationName: "Vehicle healthInsurance",
+      quotationAmount:{
+        amountActual:"1200",
+        amountFormatted:"1200"
+      }
+    }
+  },
+  addons:{
+    0:{
+      addonsId:"ADDONSID68799",
+      addonsName:"Gold Primary",
+      addonsAmount:{
+        amountActual:"1200",
+        amountFormatted:"1200"
+      }
+    }
+  },
+  proposalNumber: "09877656",
+  productId: "PRODUCT12987",
+  productName: "travelInsurance",
+  paymentId: "VADE0B248932",
+  paymentAmount: "2345.90",
+
+  bankDetails:{
+    bankName:"SBI Branch",
+    iban: "QWETH879793"
+  },
+
+  policyDetails: {
+    policyNumber: "POLICY12987",
+    receiptNumber: "RECIPTW1754UY987",
+    DateIssued: "21-11-1999",
+    policyProducerCode: "6979POLICY12987",
+    policyCommencementDate: "21-11-2108",
+    policyCommencementTime: "1258:89:98",
+    productName: "healthInsurance",
+    planName: "GOLD sumInsured",
+    coverType: "UGHIH97QWE",
+    sumInsured: "AWETY245JI",
+    renewalDueDate: "13-09-2011",
+    periodOfInsurance:{
+      from: "13-09-2011",
+      to: "13-09-2012"
+    },
+    policyPeriod: "1YEAR",
+    clientType: "CUSTOMER"
+  },
+
+
+  intermediaryDetails:{
+    intermediaryCode: "BR149000",
+    intermediaryName: "UNISON INS. BROKING SERVICES PVT. LTD",
+    contact: "898357445",
+    intermediaryAddress: "UNISON INS. BROKING SERVICES PVT. LTD",
+    intermediaryFax: "BR149000"
+  },
+
+
+  policyHolderDetails:{
+    NameOfPolicyHolder: "VPC1138350000101",
+    policyHolderDateOfBirth: "12-10-2010",
+    country: "INDIA",
+    occupation: "BUSSINESS",
+    mobileNumber: "91066448137",
+    email: "TEST@GMAIL.COM",
+    gender: "MALE",
+    uniqueCountryId: "1297PANKB76",
+    uniqueCountryIdExpireDate:"23-12-2012",
+    customerId: "TUBVJHJIJH1297PANKB76",
+    customerGstinNumber: "GSTINWER61234HJIJH1297PANKB76",
+    address:{
+      addressLine1: "Mr.SANKET H JAINR NO 206 B WING SUMMER TOWER 2 108 SETH  MUMBAI,",
+      country: "INDIA",
+      countryId: "124",
+      state: "MAHARASHTRA",
+      stateId: "12",
+      city: "MOTISHA",
+      pinCode: "400010",
+      ipAddress: "127.0.0.45",
+      longitude: "20.5937° N",
+      latitude: "78.9629° E"
+    }
+  },
+
+
+  nomineeDetails:{
+    nomineeName: "RAJESH KUMAR",
+    nomineeAddress:{
+    address:{
+      addressLine1: "Mr.SANKET H JAINR NO 206 B WING SUMMER TOWER 2 108 SETH  MUMBAI,",
+      country: "INDIA",
+      countryId: "124",
+      state: "MAHARASHTRA",
+      stateId: "12",
+      city: "MOTISHA",
+      pinCode: "400010",
+      ipAddress: "127.0.0.45",
+      longitude: "20.5937° N",
+      latitude: "78.9629° E"
+    }
+    },
+    relationship:"SPOUSE"
+  },
+
+
+  premiumAndGstDetails:{
+    totalGrossPremium: "2345.87",
+    sgst:{
+      rateOfTax: "12.3",
+      amount: "12345"
+    },
+    cgst:{
+      rateOfTax:"9.02",
+      amount:"18789"
+    },
+    igst:{
+      rateOfTax: "0.02",
+      amount: "89908"
+    },
+    netPremiumAmount: "25490"
+
+  },
+
+
+
+  travelInsurance:{
+    0:{
+      name: "RAJESH SINHA",
+      relationshipWithApplicant : "MOMOS",
+      dateOfBirth: "12-09-2011",
+      passportNumber: "PANK78519",
+      anyPreExistingDisease: "NO",
+      nomineeName: "MANISH",
+      relationshipWithNominee: "MOMOS"
+    }
+  },
+
+
+  healthInsurance:{
+    0:{
+      nameOfInsuredPerson:"RAJESH KUMAR",
+      dateOfBirth: "12-10-2011",
+      gender: "MALE",
+      occupation: "BUSSINESS MAN",
+      relationshipWithPolicyHolder: "KOMAL KIHIO",
+      dateOfInceptionOfContinuousCoverage: "12-11-2010",
+      anyPreExistingDisease: "YES"
+    }
+  },
+
+
+  privateCarInsurance:{
+    0:{
+      registrationNumber: "MH02CZ1069",
+      typeOfBody: "Hatchback",
+      engineNumber: "DM062041",
+      chassisNumber: "DM565065",
+      cubicCapacity: "1197",
+      yearOfManufacture: "2013",
+      makeOfTheVehicle: "HYUNDAI MOTORS LTD.",
+      seatingCapacity: "5",
+      modelDescription: "i 20 Magna",
+      toalPremium : "11243"
+    }
+  }
+
+});
+
+module.exports = mongoose.model("customer", customerSchema);

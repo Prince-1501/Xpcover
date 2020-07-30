@@ -1,0 +1,30 @@
+// Discuss on 29 June
+
+
+// Mapping Connection
+
+1 insurance_product --> only 1 insurance_type
+1 insurance_product --> multiple language
+1 insurance_product --> only 1 insurance_category
+1 insurance_product --> multiple countries
+
+1 insurance_product after mapped with a company --> 2 design possible of policy schedule a/c to language
+
+1 partner --> multiple insurance_product sell --> in multiple countries
+1 insurance_type --> many insurance_product
+1 insurance company --> 1 country sell
+1 country --> only 1 currency
+insurance_category--> 3 Types (main product | add ons | micro_product)
+
+
+
+//
+insurance_product_id  --> VARCHAR(6)
+
+26 * 26 * 26 * 26
+for example :-  AAAA  AAAB  AAAC  AAAD  ...
+
+Make the product id as 6 character long
+1st character=Type
+2nd character=Category
+3,4,5,6 for product id | all the characters will be alphabetic
