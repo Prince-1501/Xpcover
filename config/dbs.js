@@ -12,4 +12,13 @@ module.exports = {
   'usa': {
     uri: process.env.DBURL_USA,
   },
+  
+  'germany': {
+    uri: process.env.DBURL_GERMANY,
+  },
+  
+  'russia': {
+    uri: process.env.DBURL_RUSSIA,
+  },
+
 };
