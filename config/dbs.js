@@ -15,5 +15,5 @@ module.exports = {
   
   'germany': {
     uri: process.env.DBURL_GERMANY,
-  },
+  }
 };
